@@ -6,8 +6,102 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.Wrapper {
+  background: linear-gradient(#ff9d37,#f0a9268a,#0072ff3d,#0066ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.form-container {
+  box-shadow: 2px 3px 5px 2px #f0a9268a;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.123);
+  padding: 100px 50px 50px 50px;
+  margin: auto;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+.Form-title {
+  text-align: center;
+  font-size: 25px;
+  text-shadow: -1px -1px 5px #f95c00ab;
+  background-color: cornflowerblue;
+  box-shadow: 2px 3px 5px 2px #f0a9268a;
+  background: #0000000d;
+  line-height: 100%;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+input[type="text"] {
+  color: #fff !important;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid gray;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  outline: none;
+  font-size: 16px;
+}
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.781);
+  text-shadow: 5px 5px 5px #00aaf9ab;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+button{
+  width: 50%;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  font-weight: bolder;
+  background-color: rgb(255 239 193 / 58%);
+  color: rgb(48, 47, 47);
+  cursor: pointer;
+  transition:all 0.5s;
+  text-shadow: -1px -1px 3px #f9aa00ab;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+
+}
+button:hover {
+  font-weight: bold;
+  background-color: rgb(0, 162, 255);
+  color: #fff;
+}
+
+.info {
+  margin-top: 30px;
+  padding: 10px;
+}
+.info-key{
+  padding-bottom: 10px;
+  border-bottom: 2px solid  rgb(159, 185, 233);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.info-value {
+  margin-left: 10px;
+  color:rgb(255 245 126);
+  font-size: 14px;
+  letter-spacing: 2px;
+} 
+.info img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
 }
